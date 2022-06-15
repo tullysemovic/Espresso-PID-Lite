@@ -1,7 +1,7 @@
 # Espresso-PID
 A web-based PID controller primarily aimed for controlling espresso machines. In my case: the Gaggia Classic Pro
 
-![Main Dashboard](https://github.com/tsemovic/Espresso-PID/blob/main/images/theme5.jpg?raw=true)
+![Main Dashboard](https://github.com/tullysemovic/Espresso-PID-Lite/blob/main/images/theme5.jpg?raw=true)
 
 
 ## Why 
@@ -27,11 +27,11 @@ The front-end of the app is built on [Vue 3](https://vuejs.org/guide/introductio
 
 ## Hardware Installation
 This is how all of the components should be physically connected together (wire colours may vary depending on the model and region of the machine)
-![Wiring Diagram](https://github.com/tsemovic/Espresso-PID/blob/main/images/wiringDiagramGCP.jpg?raw=true)
+![Wiring Diagram](https://github.com/tullysemovic/Espresso-PID-Lite/blob/main/images/wiringDiagramGCP.jpg?raw=true)
 
 Here is a more colourful diagram
 
-![Wiring Diagram](https://github.com/tsemovic/Espresso-PID/blob/main/images/System%20Diagram.jpg?raw=true)
+![Wiring Diagram](https://github.com/tullysemovic/Espresso-PID-Lite/blob/main/images/System%20Diagram.jpg?raw=true)
 
 
 ## Software Installation
@@ -47,7 +47,7 @@ docker-compose:
 version: "2.1"
 services:
   espresso-pid:
-    image: tsemovic/espresso-pid:latest
+    image: tullysemovic/espresso-pid:latest
     container_name: espresso-pid
     ports:
       - 80:5000
@@ -63,13 +63,17 @@ services:
 
 ## Usage 
 Click the settings button to configure the PID parameters and the target temperature
-![Settings Dashboard](https://github.com/tsemovic/Espresso-PID/blob/main/images/theme5_settings.jpg?raw=true)
+![Settings Dashboard](https://github.com/tullysemovic/Espresso-PID/blob/main/images/theme5_settings.jpg?raw=true)
 
 ## Theming
 This app allows you to fully customise the colours and images used for that personalised touch
 
+To do this you will need to download the full version: [here](https://www.patreon.com/tullysemovic)
+
+ 
+
 To do this you will need to edit the ```settings_global.json``` file
-![Settings Configuration](https://github.com/tsemovic/Espresso-PID/blob/main/images/config.jpg?raw=true)
+![Settings Configuration](https://github.com/tullysemovic/Espresso-PID-Lite/blob/main/images/config.jpg?raw=true)
 
 To change the background image you will need to set ```BACKGROUND_IMAGE``` to ```true``` and then replace the background image at ```server/dist/static/img/background.xyz.jpg```. Be sure to keep the same file the same as the template image already in there.
 
@@ -87,10 +91,10 @@ To change the colours used throughout the app you will need to change ```VUE_COL
 
 
 ### Theme examples
-![Theme 1](https://github.com/tsemovic/Espresso-PID/blob/main/images/theme1.jpg?raw=true)
-![Theme 4](https://github.com/tsemovic/Espresso-PID/blob/main/images/theme4.jpg?raw=true)
-![Theme 2](https://github.com/tsemovic/Espresso-PID/blob/main/images/theme2.jpg?raw=true)
-![Theme 3](https://github.com/tsemovic/Espresso-PID/blob/main/images/theme6.jpg?raw=true)
+![Theme 1](https://github.com/tullysemovic/Espresso-PID-Lite/blob/main/images/theme1.jpg?raw=true)
+![Theme 4](https://github.com/tullysemovic/Espresso-PID-Lite/blob/main/images/theme4.jpg?raw=true)
+![Theme 2](https://github.com/tullysemovic/Espresso-PID-Lite/blob/main/images/theme2.jpg?raw=true)
+![Theme 3](https://github.com/tullysemovic/Espresso-PID-Lite/blob/main/images/theme6.jpg?raw=true)
 
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
