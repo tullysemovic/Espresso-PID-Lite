@@ -90,13 +90,6 @@ readPIDSettings()
 def index():
     return render_template("index.html")
 
-
-@app.route('/settings')
-def settings():
-    with open(directory_path / "settings_global.json", 'r') as f:
-        data = json.load(f)
-    return data
-
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(directory_path / "dist/favicon.ico")
@@ -192,11 +185,8 @@ def terminate():
 
 # If the script that was run is this script (we have not been imported)
 if __name__ == '__main__':
-    
-    with open(directory_path / "settings_global.json", 'r') as f:
-        data = json.load(f)
-        
+           
     # Run flask and espresso controller on seperate threads
     threading.Thread(target=lambda: socketio.run(
-        app, host=data["FLASK_IP"], port=data["FLASK_PORT"], debug=False)).start()
+        app, host="0.0.0.0", port="5000", debug=False)).start()
     threading.Thread(target=espresso).start()
