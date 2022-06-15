@@ -68,9 +68,8 @@ Click the settings button to configure the PID parameters and the target tempera
 ## Theming
 This app allows you to fully customise the colours and images used for that personalised touch
 
-To do this you will need to download the full version: [here](https://www.patreon.com/tullysemovic)
+To do this you will need to download the full version: [here](https://tullysemovic.sellfy.store/p/espresso-pid/)
 
- 
 
 To do this you will need to edit the ```settings_global.json``` file
 ![Settings Configuration](https://github.com/tullysemovic/Espresso-PID-Lite/blob/main/images/config.jpg?raw=true)
