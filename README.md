@@ -63,7 +63,7 @@ services:
 
 ## Usage 
 Click the settings button to configure the PID parameters and the target temperature
-![Settings Dashboard](https://github.com/tullysemovic/Espresso-PID/blob/main/images/theme5_settings.jpg?raw=true)
+![Settings Dashboard](https://github.com/tullysemovic/Espresso-PID-Lite/blob/main/images/theme5_settings.jpg?raw=true)
 
 ## Theming
 This app allows you to fully customise the colours and images used for that personalised touch
